@@ -1,13 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+
+    <!-- LINK -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <!-- Icon https://ionic.io/ionicons/v2 -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page-animation.css">
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- page animation -->
+    <script src="./js/page-animation.js"></script>
+    <!-- animation du texte {typed.js} -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.6/typed.min.js"></script>
+    <script src="./js/text-animation.js"></script>
 </head>
+
 <body>
-    <h1>Mon Portfolio</h1>
-    
+    <header class="header-left">
+        <a href="" class="logo">
+            <h1 class="logo-text"><i class="ion-ios-keypad-outline"></i></h1>
+        </a>
+        
+        <a href="" class="sidemenu-btn" id="sidemenu_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+            
+        <!-- Nav Side -->
+        <div class="side-nav">
+            <ul class="site-main-menu">
+                <li>
+                    <a data-animation="58" data-goto="1" href="#home">
+                        <i class="ion-ios-home-outline"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-animation="59" data-goto="2"  href="#about">
+                        <i class="ion-ios-list-outline"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-animation="60" data-goto="3" href="#services">
+                        <i class="ion-android-bulb"></i>
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-animation="59" data-goto="4" href="#portfolio">
+                        <i class="ion-android-favorite-outline"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-animation="58" data-goto="5" href="#clients">
+                        <i class="ion-ios-checkmark-outline"></i>
+                        <span>Clients</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-animation="61" data-goto="6" href="#contact">
+                        <i class="ion-ios-telephone-outline"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-left">
+        <div class="subpages">
+            <!-- HOME SECTION -->
+            <section id="home" class="pt-page">
+                <div class="container-fluid">
+                    <section class="banner">
+                        <div class="top-fixed d-flex">
+                            <div class="info">
+                                <label>+33 6 69 39 12 89</label>&nbsp;
+                                <label>perezguy@live.fr</label>
+                            </div>
+                            <div class="social">
+                                <a href="">
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-pinterest"></i>
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row full-screen align-items-center">
+                                <div class="col-md-12">
+                                    <div class="box">
+                                        <h6>Hello, My Name is</h6>
+                                        <div class="text"></div>
+                                        <p class="lead">
+                                            FULL-STACK DEVELOPER | UX/UI DESIGNER | FREELANCER
+                                        </p>
+                                        <p class="desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempore suscipit ea, assumenda quos obcaecati necessitatibus beatae veniam nisi illum.
+                                        </p>
+                                        <div class="btn-bar">
+                                            <a href="">Download CV</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="pt-page">
+                <div class="container">
+                    <div class="row gap">
+                        <div class="col-md-12 title">
+                            <h1>I'M PEREZ GUY</h1>
+                            <h2>A PASSIONATE DEVELOPER & DESIGNER</h2>
+                        </div>
+                        <!-- COLUMN LEFT -->
+                        <div class="col-md-4 left-about">
+                            <h4>Howdy !</h4>
+                            <p>
+                                My name is Perez Guy. I'm a passionate web designer and developer with two years experience in this domain, focused on building great websites in JavaScript or Php
+                            </p>
+                            <p>
+                                For every single project that I have done my focus has been on creating the best user experience possible. I've worked with several larger as well as smaller brands and I love challenges.
+                            </p>
+                            <br>
+                            <a href="" class="button-download">
+                                <i class="fa fa-downlaod"></i> Download CV
+                            </a>
+                            <br><br><br>
+                        </div>
+                        <!-- COLUMN MID -->
+                        <div class="col-md-4 image">
+                            <img src="./images/photo_portfolio.png" alt="Photo du Développeur">
+                        </div>
+
+                        <!-- COLUMN RIGHT -->
+                        <div class="col-md-4">
+                            <div class="skills">
+                                <!-- HTML BAR -->
+                                <h5>HTML &amp; CSS <span>80%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:80%;" aria-valuenow="80" aria-valuemax="100"></div>
+                                </div>
+                                <!-- JAVASCRPIT BAR -->
+                                <h5>JAVASCRIPT <span>65%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:62%;" aria-valuenow="65" aria-valuemax="100"></div>
+                                </div>
+                                <!-- REACT BAR -->
+                                <h5>REACT <span>54%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:54%;" aria-valuenow="54" aria-valuemax="100"></div>
+                                </div>
+                                <!-- ANGULAR BAR -->
+                                <h5>ANGULAR <span>48%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:48%;" aria-valuenow="48" aria-valuemax="100"></div>
+                                </div>
+                                <!-- NODESJS BAR -->
+                                <h5>NODE JS <span>58%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:58%;" aria-valuenow="58" aria-valuemax="100"></div>
+                                </div>
+                                <!-- MONGODB BAR -->
+                                <h5>MONGODB <span>68%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:68%;" aria-valuenow="68" aria-valuemax="100"></div>
+                                </div>
+                                <!-- SYNFONY BAR -->
+                                <h5>SYNFONY <span>65%</span></h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progress-bar" style="width:65%;" aria-valuenow="65" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section id="services" class="pt-page">
+                <div class="container">
+                    <section class="production-sec">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="about-heading">
+                                    <h4 class="heading">NEW PRODUCTION</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section id="portfolio" class="pt-page"></section>
+            <section id="clients" class="pt-page"></section>
+            <section id="contact" class="pt-page"></section>
+        </div>
+    </div>
 </body>
+
 </html>
