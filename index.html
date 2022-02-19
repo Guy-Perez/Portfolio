@@ -31,6 +31,9 @@
     <!-- animation du texte {typed.js} -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.6/typed.min.js"></script>
     <script src="./js/text-animation.js"></script>
+    <!-- Filtrez et triez les mises en page magiques des grid images section Portfolio -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="./js/filter-animation.js"></script>
 </head>
 
 <body>
@@ -209,17 +212,213 @@
             <section id="services" class="pt-page">
                 <div class="container">
                     <section class="production-sec">
+                        <!-- Title -->
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <div class="about-heading">
-                                    <h4 class="heading">NEW PRODUCTION</h4>
+                                    <h4 class="heading">PRODUCTIONS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Productions Line One -->
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-clock"></i>
+                                    <h4 class="production-heading">TV Shows</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-ribbon-b"></i>
+                                    <h4 class="production-heading">Awards</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-monitor"></i>
+                                    <h4 class="production-heading">Movies</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <div class="production-box">
+                                        <i class="ion-aperture"></i>
+                                        <h4 class="production-heading">Festivals</h4>
+                                        <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                            elit sed do eiusmod tem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <br><br>
+
+                        <!-- Productions Line Two -->
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-flash-off"></i>
+                                    <h4 class="production-heading">Level Up</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-bag"></i>
+                                    <h4 class="production-heading">Shopping</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-speedometer"></i>
+                                    <h4 class="production-heading">Speed Up</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="ion-load-c"></i>
+                                    <h4 class="production-heading">Repeats</h4>
+                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
+                                        elit sed do eiusmod tem.</p>
                                 </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </section>
-            <section id="portfolio" class="pt-page"></section>
+
+            <!-- PORTFOLIO SECTION -->
+            <section id="portfolio" class="pt-page">
+                <div class="mh-portfolio" id="gallery">
+                    <div class="container-fluid">
+                        <br><br><br><br>
+                        <div class="row">
+                            <div class="col-md-12 offset-md-2 text-center">
+                                <div class="about-heading">
+                                    <h6 class="heading">PORTFOLIO</h6>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- Nav Categories -->
+                            <div class="col-md-12">
+                                <div class="portfolio-nav" id="filter">
+                                    <ul>
+                                        <li data-filter="*" class="current">
+                                            <span>All Categories</span>
+                                        </li>
+                                        <li data-filter=".user-interface">
+                                            <span>Web Design</span>
+                                        </li>
+                                        <li data-filter=".branding">
+                                            <span>Branding</span>
+                                        </li>
+                                        <li data-filter=".mockup">
+                                            <span>Mockups</span>
+                                        </li>
+                                        <li data-filter=".ui">
+                                            <span>Photography</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Grid Portfolio Image -->
+                                <div class="row portfolio">
+                                    <div class="grid-item col-md-4 user-interface">
+                                        <figure>
+                                            <img src="images/portfolio/g1.jpg" alt="couverture de livre">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item col-md-4 ui mockup">
+                                        <figure>
+                                            <img src="images/portfolio/g2.png" alt="Soin de bain">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item col-md-4 user-interface">
+                                        <figure>
+                                            <img src="images/portfolio/g8.png" alt="Beer">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item col-md-4 branding">
+                                        <figure>
+                                            <img src="images/portfolio/g3.png" alt="Plant">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item col-md-4 ui">
+                                        <figure>
+                                            <img src="images/portfolio/g7.jpg" alt="Bag">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="grid-item col-md-4 branding">
+                                        <figure>
+                                            <img src="images/portfolio/g4.png" alt="Book">
+                                            <figcaption>
+                                                <i class="fa fa-search">
+                                                    <h5 class="title">Creative Design</h5>
+                                                    <span class="sub-title">
+                                                        Photography
+                                                    </span>
+                                                </i>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  -->
             <section id="clients" class="pt-page"></section>
             <section id="contact" class="pt-page"></section>
         </div>
