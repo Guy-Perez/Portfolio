@@ -1,0 +1,139 @@
+/* HOME: Nav Bar & burger menu */
+@media screen and (max-width: 991px) {
+
+    .main-left {
+        padding: 0;
+    }
+
+    .header-left {
+        width: 100%;
+        height: 70px;
+        min-height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    }
+
+    .side-nav {
+        position: fixed;
+        width: 80px;
+        top: 0;
+        left: -90px;
+        height: 100vh;
+        background-color: #404143;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .side-nav.active {
+        left: 0;
+    }
+
+    .sidemenu-btn {
+        display: inline-block;
+    }
+
+    .logo {
+        width: 80px;
+        height: 70px;
+        z-index: 9;
+    }
+}
+
+/* ABOUT: btn social disable */
+@media (min-width: 320px) and (max-width: 768px) {
+    .info, .social {
+        display: none;
+    }
+
+    #about .left-about {
+        display: none;
+    }
+
+    .title {
+        display: none;
+    }
+
+    #about .button-download {
+        display: none !important;
+    }
+
+    .image img {
+        width: 50% !important;
+        margin: 30% 0 10px 20%;
+        text-align: center;
+    }
+
+    .skills {
+        width: 90%;
+    }
+
+    .skills h5 {
+        font-size: 11px !important;
+        width: 94%;
+    }
+
+    section.production-sec {
+        height: 100vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-top: 135px;
+    }
+
+    .portfolio .row {
+        height: auto !important;
+    }
+
+    section#portfolio {
+        height: 100vh;
+        backface-visibility: visible;
+        transform: initial;
+        transform-style: unset;
+        padding: 0px;
+        overflow: scroll;
+    }
+
+    section#portfolio #gallery {
+        margin-top: 190%;
+    }
+
+    .portfolio-nav ul li span {
+        padding: 0px 0px !important;
+    }
+
+    .portfolio-nav li span {
+        font-size: 13px;
+    }
+    
+    .portfolio-nav {
+        display: none;
+    }
+
+    .about-heading .heading:before,
+    .about-heading .heading:after {
+        width: 0px;
+    }
+
+    #services .about-heading .heading {
+        font-size: 33px;
+        border-bottom: 2px solid #19f58b;
+    }
+
+    #portfolio .about-heading .heading {
+        font-size: 30px;
+        border-bottom: 2px solid #19f58b;
+    }
+
+    #clients .about-heading .heading {
+        font-size: 30px;
+        margin: 0 auto;
+        border-bottom: 2px solid #19f58b;
+    }
+
+    #contact .about-heading .heading {
+        font-size: 40px;
+        border-bottom: 2px solid #19f58b;
+    }
+}
