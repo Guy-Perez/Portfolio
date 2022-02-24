@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
 
     <!-- Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
@@ -24,8 +25,12 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
     <!-- owl carousel cdn save -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
+
+    <!-- Modal Animation -->
+    <link rel="stylesheet" href="./css/lightbox.css">
+
+    <!-- <link rel="stylesheet" href="./css/fancybox.css"> -->
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -36,6 +41,7 @@
     <link rel="stylesheet" href="./css/clients.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/page-animation.css">
 </head>
 
@@ -69,7 +75,7 @@
                 <li>
                     <a data-animation="60" data-goto="3" href="#services">
                         <i class="ion-android-bulb"></i>
-                        <span>Services</span>
+                        <span>Goals</span>
                     </a>
                 </li>
                 <li>
@@ -81,7 +87,7 @@
                 <li>
                     <a data-animation="58" data-goto="5" href="#clients">
                         <i class="ion-ios-checkmark-outline"></i>
-                        <span>Clients</span>
+                        <span>recommend</span>
                     </a>
                 </li>
                 <li>
@@ -106,14 +112,17 @@
                                 <label>perezguy@live.fr</label>
                             </div>
                             <div class="social">
-                                <a href="">
-                                    <i class="fa fa-linkedin"></i>
-                                    <i class="fa fa-facebook"></i>
-                                    <i class="fa fa-twitter"></i>
-                                    <i class="fa fa-pinterest"></i>
-                                    <i class="fa fa-github"></i>
-                                    <i class="fa fa-behance"></i>
-                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/guy-perez-8547a419a/" target="_blank"><i
+                                    class="fa fa-linkedin "></i></a>
+                                <a href="https://www.facebook.com/perezguy34/" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/PerezGuy6" target="_blank"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="https://github.com/Guy-Perez" target="_blank"><i class="fa fa-github"></i></a>
+                                <a href="https://gitlab.com/Perez_Guy" target="_blank"><i class="fa fa-gitlab"></i></a>
+                                <a href="https://stackoverflow.com/users/18276069/guy-perez" target="_blank"><i
+                                        class="fa fa-stack-overflow"></i></a>
                             </div>
                         </div>
                         <div class="container">
@@ -131,7 +140,8 @@
                                             illum.
                                         </p>
                                         <div class="btn-bar">
-                                            <a href="">Download CV</a>
+                                            <a href="./images/CV/CV_Perez_Guy.pdf" download="CV_Perez_Guy.pdf">Download
+                                                CV</a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,7 +173,7 @@
                                 love challenges.
                             </p>
                             <br>
-                            <a href="" class="button-download">
+                            <a href="./images/CV/CV_Perez_Guy.pdf" download="CV_Perez_Guy.pdf" class="button-download">
                                 <i class="fa fa-downlaod"></i> Download CV
                             </a>
                             <br><br><br>
@@ -232,44 +242,43 @@
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <div class="about-heading">
-                                    <h4 class="heading">PRODUCTIONS</h4>
+                                    <h4 class="heading">GOALS</h4>
                                 </div>
                             </div>
                         </div>
                         <!-- Productions Line One -->
                         <div class="row">
+
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
-                                    <i class="ion-clock"></i>
-                                    <h4 class="production-heading">TV Shows</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <i class="ion-social-javascript-outline"></i>
+                                    <h4 class="production-heading">javascript</h4>
+                                    <p class="production-des">It's a language that strongly attracts me and that's why I naturally gravitate towards it.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 text-center">
+                                <div class="production-box">
+                                    <i class="fa-brands fa-react"></i>
+                                    <h4 class="production-heading">React</h4>
+                                    <p class="production-des">it's a language that is difficult to learn but I really appreciate it.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
-                                    <i class="ion-ribbon-b"></i>
-                                    <h4 class="production-heading">Awards</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <i class="ion-social-angular-outline"></i>
+                                    <h4 class="production-heading">Angular</h4>
+                                    <p class="production-des">I learned the basics it's time to put them into practice.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
-                                    <i class="ion-monitor"></i>
-                                    <h4 class="production-heading">Movies</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <i class="fa-brands fa-vuejs"></i>
+                                    <h4 class="production-heading">Vue</h4>
+                                    <p class="production-des">When my level will be competitive enough I will present a project for a reward on this site.</p>
                                 </div>
                             </div>
-                            <div class="col-md-3 text-center">
-                                <div class="production-box">
-                                    <i class="ion-aperture"></i>
-                                    <h4 class="production-heading">Festivals</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
-                                </div>
-                            </div>
+
                         </div>
 
                         <br><br>
@@ -278,34 +287,30 @@
                         <div class="row">
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
-                                    <i class="ion-flash-off"></i>
-                                    <h4 class="production-heading">Level Up</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <i class="fa-brands fa-node"></i>
+                                    <h4 class="production-heading">Node JS</h4>
+                                    <p class="production-des">A very powerful framework that I particularly like it.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
-                                    <i class="ion-bag"></i>
-                                    <h4 class="production-heading">Shopping</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <i class="fa-brands fa-php"></i>
+                                    <h4 class="production-heading">Php</h4>
+                                    <p class="production-des">It's a backend that remains even appreciated by companies.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
                                     <i class="ion-speedometer"></i>
-                                    <h4 class="production-heading">Speed Up</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <h4 class="production-heading">MongoDB</h4>
+                                    <p class="production-des">Love its speed and dynamic design.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <div class="production-box">
                                     <i class="ion-load-c"></i>
-                                    <h4 class="production-heading">Repeats</h4>
-                                    <p class="production-des">Lorem ipsum dolor sit amet, conse ctetur adipiscing nu
-                                        elit sed do eiusmod tem.</p>
+                                    <h4 class="production-heading">MySql</h4>
+                                    <p class="production-des">I learned some functions to advance.</p>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +324,7 @@
                     <div class="container-fluid">
                         <br><br><br><br>
                         <div class="row">
-                            <div class="col-md-12  text-center">
+                            <div class="col-md-12 text-center">
                                 <div class="about-heading">
                                     <h6 class="heading">PORTFOLIO</h6>
                                 </div>
@@ -332,89 +337,129 @@
                                         <li data-filter="*" class="current">
                                             <span>All Categories</span>
                                         </li>
-                                        <li data-filter=".user-interface">
-                                            <span>Web Design</span>
+                                        <li data-filter=".mern">
+                                            <span>Mern</span>
                                         </li>
-                                        <li data-filter=".branding">
-                                            <span>Branding</span>
+                                        <li data-filter=".angular">
+                                            <span>Angular</span>
                                         </li>
-                                        <li data-filter=".mockup">
-                                            <span>Mockups</span>
+                                        <li data-filter=".framework-J">
+                                            <span>Framework J</span>
                                         </li>
-                                        <li data-filter=".ui">
-                                            <span>Photography</span>
+                                        <li data-filter=".pureNative">
+                                            <span>Pure Native</span>
                                         </li>
                                     </ul>
                                 </div>
 
                                 <!-- Grid Portfolio Image -->
+                                
                                 <div class="row portfolio">
-                                    <div class="grid-item col-md-4 user-interface">
+                                    <!-- <div class="wrapper">
+                                        <div class="one">
+                                            <a href="./images/portfolio/MERN.png" data-lightbox="image-1" data-title="YourPlaces">
+                                                <img class="mern" src="./images/portfolio/MERN.png" alt="React Nodes MongoDB">
+                                            </a>
+                                        </div>
+                                        <div class="two">
+                                            <a href="./images/portfolio/afpanier.png" data-lightbox="image-2" data-title="Afpanier">
+                                                <img src="./images/portfolio/afpanier.png"alt="HTML/CSS - JS/JQ - PHP - MySql">
+                                            </a>
+                                        </div>
+                                        <div class="three">
+                                            <a href="./images/portfolio/pizz-arrive.png" data-lightbox="image-3" data-title="Pizz'arrive">
+                                                <img src="./images/portfolio/pizz-arrive.png"alt="HTML/CSS - JS/JQ">
+                                            </a>
+                                        </div>
+                                        <div class="four">
+                                            <a href="./images/portfolio/algo.png" data-lightbox="image-4" data-title="Algorithme">
+                                                <img src="./images/portfolio/algo.png"alt="HTML/CSS - JS/JQ - PHP - MySql">
+                                            </a>
+                                        </div>
+                                        <div class="five">
+                                            <a href="./images/portfolio/Angular_Books.png" data-lightbox="image-5" data-title="Angular">
+                                                <img src="./images/portfolio/Angular_Books.png"alt="Angular">
+                                            </a>
+                                        </div>
+                                        <div class="six">
+                                            <a href="./images/portfolio/Oddiris.png" data-lightbox="image-6" data-title="Oddiris">
+                                                <img src="./images/portfolio/Oddiris.png"alt="Mern">
+                                            </a>
+                                        </div>
+                                    </div> 
+
+                                </div> -->
+
+
+                                    <div class="grid-item col-md-4 mern" alt="Projet MERN">
                                         <figure>
-                                            <img src="images/portfolio/g1.jpg" alt="couverture de livre">
+                                            <!-- <a href="./images/portfolio/MERN.png" data-lightbox="image-1" data-title="Project MERN">
+                                                <img src="./images/portfolio/MERN.png" alt="React Nodes MongoDB" >
+                                            </a> -->
+                                            <img src="images/portfolio/MERN.png" alt="React Nodes MongoDB">
                                             <figcaption>
                                                 <i class="fa fa-search">
-                                                    <h5 class="title">Creative Design</h5>
+                                                    <h5 class="title">PROJECT YOURPLACES</h5>
                                                     <span class="sub-title">
-                                                        Photography
+                                                        Language: MERN
                                                     </span>
                                                 </i>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div class="grid-item col-md-4 ui mockup">
+                                <div class="grid-item col-md-4 framework-J">
                                         <figure>
-                                            <img src="images/portfolio/g2.png" alt="Soin de bain">
+                                            <img src="images/portfolio/afpanier.png" alt="Site algo">
                                             <figcaption>
                                                 <i class="fa fa-search">
-                                                    <h5 class="title">Creative Design</h5>
+                                                    <h5 class="title">PROJECT AFPANIER</h5>
                                                     <span class="sub-title">
-                                                        Photography
+                                                        Language: HTML/CSS - JS-JQuery - Php - MySql
                                                     </span>
                                                 </i>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div class="grid-item col-md-4 user-interface">
+                                    <div class="grid-item col-md-4 pureNative">
                                         <figure>
-                                            <img src="images/portfolio/g8.png" alt="Beer">
+                                            <img src="images/portfolio/pizz-arrive.png" alt="Site de pizza">
                                             <figcaption>
                                                 <i class="fa fa-search">
-                                                    <h5 class="title">Creative Design</h5>
+                                                    <h5 class="title">PROJECT PIZZ'ARRIVE</h5>
                                                     <span class="sub-title">
-                                                        Photography
+                                                        Language: HTML/CSS - JS/JQ
                                                     </span>
                                                 </i>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div class="grid-item col-md-4 branding">
+                                    <div class="grid-item col-md-4 angular">
                                         <figure>
-                                            <img src="images/portfolio/g3.png" alt="Plant">
+                                            <img src="images/portfolio/Angular_Books.png" alt="Books">
                                             <figcaption>
                                                 <i class="fa fa-search">
-                                                    <h5 class="title">Creative Design</h5>
+                                                    <h5 class="title">PROJECT BOOKS</h5>
                                                     <span class="sub-title">
-                                                        Photography
+                                                        Language: Angular
                                                     </span>
                                                 </i>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div class="grid-item col-md-4 ui">
+                                    <div class="grid-item col-md-4 mern">
                                         <figure>
-                                            <img src="images/portfolio/g7.jpg" alt="Bag">
+                                            <img src="images/portfolio/Oddiris.png" alt="Projet Oddiris">
                                             <figcaption>
                                                 <i class="fa fa-search">
-                                                    <h5 class="title">Creative Design</h5>
+                                                    <h5 class="title">Project Oddiris</h5>
                                                     <span class="sub-title">
-                                                        Photography
+                                                        Language: MERN
                                                     </span>
                                                 </i>
                                             </figcaption>
                                         </figure>
                                     </div>
-                                    <div class="grid-item col-md-4 branding">
+                                    <!-- <div class="grid-item col-md-4 branding">
                                         <figure>
                                             <img src="images/portfolio/g4.png" alt="Book">
                                             <figcaption>
@@ -426,7 +471,7 @@
                                                 </i>
                                             </figcaption>
                                         </figure>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -442,7 +487,7 @@
                         <div class="col-12 text-center">
                             <div class="about-heading">
                                 <h6 class="heading">
-                                    OUR CLIENTS
+                                    RECOMMEND
                                 </h6>
                             </div>
                         </div>
@@ -460,18 +505,19 @@
                                     </div>
                                     <div class="description">
                                         <p class="paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                                            accusamus ratione labore, dolorum, ut laudantium cum repudiandae
-                                            reprehenderit doloribus asperiores ad molestiae velit distinctio dolor
-                                            temporibus eaque! Cumque, non harum!
+                                            En 2020, j'ai pris Guy en stage pour un projet MERN.
+                                            Malgré son peu d'expériences dans ces langages, il sait investit
+                                            énormément et a pu produire ce qui lui était demander.
+                                            Professionnel, aimant les challenges, un développeur que je recommande pour ces capacités et son comportement professionnel.
                                         </p>
                                     </div>
                                     <div class="testimonial-img mt-4">
-                                        <img src="./images/testimonial/testimonial-img-1.png"
+                                        <img src="./images/recommend/Seb_Nencioni.jpg"
                                             alt="image jeune femme rousse">
                                     </div>
                                     <div class="testimonial-title mb-3 mt-3">
-                                        <h4 class="text-yellow font-weight-normal text-uppercase">SARA JONES</h4>
+                                        <h4 class=" font-weight-normal text-uppercase">Sébastien NENCIONI</h4>
+                                        <h6 class="font-weight-normal text-uppercase">PDG Oddiris</h6>
                                     </div>
                                 </div>
                                 <!-- 2nd caroussel -->
@@ -481,18 +527,17 @@
                                     </div>
                                     <div class="description">
                                         <p class="paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                                            accusamus ratione labore, dolorum, ut laudantium cum repudiandae
-                                            reprehenderit doloribus asperiores ad molestiae velit distinctio dolor
-                                            temporibus eaque! Cumque, non harum!
+                                            Au cours de l'année 2020, j'ai pu travailler avec Guy sur un projet. Cette collaboration aura été très positive et enrichissante, car Guy est très impliqué et rigoureux dans ses tâches, et livre en temps et en heure. Je ne m'inquiète donc pas du tout pour son avenir professionnel, car il développe et actualise en permanence ses compétences.
                                         </p>
                                     </div>
                                     <div class="testimonial-img mt-4">
-                                        <img src="./images/testimonial/testimonial-img-2.png"
+                                        <img src="./images/recommend/Seb_Guerra.jpg"
                                             alt="image jeune homme blond">
                                     </div>
                                     <div class="testimonial-title mb-3 mt-3">
-                                        <h4 class="text-yellow font-weight-normal text-uppercase">RICKY CLARK</h4>
+                                        <h4 class="font-weight-normal text-uppercase">Sébastien Guerra</h4>
+                                        <h6 class="font-weight-normal text-uppercase">PDG Dev Code One</h6>
+
                                     </div>
                                 </div>
                                 <!-- 3rd caroussel -->
@@ -502,18 +547,16 @@
                                     </div>
                                     <div class="description">
                                         <p class="paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                                            accusamus ratione labore, dolorum, ut laudantium cum repudiandae
-                                            reprehenderit doloribus asperiores ad molestiae velit distinctio dolor
-                                            temporibus eaque! Cumque, non harum!
+                                            En 2021 j'étais son chef de projet, et j'ai apprécié travailler à ses côtés. Guy est très rigoureux, il est force de proposition et très autonome. Il se dépasse constamment et monte en compétences très régulièrement. C'est une valeur ajoutée évidente au projet et à l'entreprise.
                                         </p>
                                     </div>
                                     <div class="testimonial-img mt-4">
-                                        <img src="./images/testimonial/testimonial-img-3.png"
+                                        <img src="./images/recommend/Andre_Aznar.jpg"
                                             alt="image jeune homme cubain">
                                     </div>
                                     <div class="testimonial-title mb-3 mt-3">
-                                        <h4 class="text-yellow font-weight-normal text-uppercase">JHONSON DANY</h4>
+                                        <h4 class="text-yellow font-weight-normal text-uppercase">André Aznar</h4>
+                                        <h6 class="font-weight-normal text-uppercase">PDG Dev Code One</h6>
                                     </div>
                                 </div>
                                 <!-- 4th caroussel -->
@@ -523,18 +566,17 @@
                                     </div>
                                     <div class="description">
                                         <p class="paragraph">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                                            accusamus ratione labore, dolorum, ut laudantium cum repudiandae
-                                            reprehenderit doloribus asperiores ad molestiae velit distinctio dolor
-                                            temporibus eaque! Cumque, non harum!
+                                            En 2019, j’ai été le chef de projet sur PMT et Guy a participé à ce projet. Quel plaisir de mouvoir travailler une personne passionner, sa faisait quelques mois à peines qu’il développer mais je me suis reconnu dans mes début.
+                                            Investi, sérieux et a l’écoute, il aime apprendre et progresser.
                                         </p>
                                     </div>
                                     <div class="testimonial-img mt-4">
-                                        <img src="./images/testimonial/testimonial-img-4.png"
-                                            alt="image jeune femme blonde">
+                                        <img src="./images/recommend/Jerome_Fevrier.jpg"
+                                            alt="image jeune homme brun">
                                     </div>
                                     <div class="testimonial-title mb-3 mt-3">
-                                        <h4 class="text-yellow font-weight-normal text-uppercase">LEVON TYRA</h4>
+                                        <h4 class="text-yellow font-weight-normal text-uppercase">Jêrome Février</h4>
+                                        <h6 class="font-weight-normal text-uppercase">Dev chez Kaliop</h6>
                                     </div>
                                 </div>
 
@@ -603,8 +645,24 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <!--Call your modal-->
+    <!-- <a id="demo01" href="#animatedModal">DEMO01</a> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption">toto</div>
+    </div>
+
     <!-- SCRIPT -->
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
     <script src="./js/jquery-3.6.0.js"></script>
 
     <!-- animation du texte {typed.js} -->
@@ -621,6 +679,11 @@
 
     <!-- side-nav responsive add/remove class acitve -->
     <script src="./js/nav-responsive-animation.js"></script>
+
+    <!-- modal -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/lightbox.js"></script>
+
 
     <!-- page animation -->
     <script async defer src="./js/page-animation.js"></script>

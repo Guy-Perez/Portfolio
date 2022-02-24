@@ -1,6 +1,10 @@
 /* HOME: Nav Bar & burger menu */
 @media screen and (max-width: 991px) {
 
+    .info, .social {
+        display: none;
+    }
+
     .main-left {
         padding: 0;
     }

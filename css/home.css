@@ -40,6 +40,11 @@
     border: 2px solid #c8c8c8;
     line-height: 47px;
     text-align: center;
+    transition: all 0.35s ease-in-out;
+}
+
+.social a i:hover {
+    background-color: #19f58b;
 }
 
 .banner .full-screen {
@@ -116,15 +121,15 @@
     bottom: 0;
     margin: auto;
     height: 2px;
-    background: currentColor;
+    background: white;
     transition: ease all 0.35s;
 }
 
 .btn-bar a:hover {
     padding-left: 45px;
+    color: #19f58b;
 }
 
 .btn-bar a:hover:after {
     width: 40px;
-    
 }

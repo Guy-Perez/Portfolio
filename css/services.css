@@ -41,6 +41,7 @@
 .production-box i {
     font-size: 65px !important;
     margin-bottom: 8px;
+    line-height: 57px !important;
     transition: 0.5s ease,
 }
 

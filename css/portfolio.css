@@ -1,4 +1,8 @@
 .mh-portfolio {
+    /* position: absolute;
+    top: 0%;
+    left: 31%; */
+    /* au dessu a retirer */
     margin: 0 auto;
 }
 
@@ -18,8 +22,8 @@
     display: inline-block;
     margin: 0 10px;
     cursor: pointer;
-    color:white;
-    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
 }
 
@@ -59,11 +63,11 @@
     width: 100%;
     top: auto;
     left: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     bottom: 0;
     z-index: 10;
     transform: 0.5s;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .grid-item figure figcaption:after {
@@ -88,7 +92,7 @@
     text-align: center;
     width: 100%;
     left: 0;
-    top: 45%;
+    top: 35%;
     transform: translateX(0) translateY(0) rotateZ(0) rotate(0deg) scale(1);
     opacity: 0;
 }
@@ -96,9 +100,9 @@
 figcaption .title {
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 35px;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 60px;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -113,9 +117,9 @@ figcaption .title {
 figcaption .sub-title {
     margin: 0;
     padding: 0;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 35px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 90px;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -133,8 +137,8 @@ figcaption .sub-title {
 }
 
 .grid-item figure:hover figcaption {
-    background: rgba(25, 245, 139, 0.450);
-    color: white;
+    background: rgba(19, 158, 91, 0.45);
+    color: #ffffff;
 }
 
 .grid-item figure:hover figcaption:after {
@@ -146,14 +150,14 @@ figcaption .sub-title {
 .grid-item figure:hover figcaption .fa {
     opacity: 1;
     transform: translateX(0px) translateY(0) translatez(0) rotate(0deg) scale(1);
-    transition: all 0.4s ease-out;
+    transition: all 0.55s ease-out;
     margin-bottom: 35px !important;
 }
 
 .grid-item figure:hover figcaption:after {
     opacity: 1;
     transform: translateX(0px) translateY(0) translatez(0) rotate(0deg) scale(1);
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .grid-item figure:hover figcaption .title {
@@ -161,7 +165,7 @@ figcaption .sub-title {
     transform: translateX(0px) translateY(0) translatez(0) rotate(0deg) scale(1);
     transition: 0.4s;
     margin-top: 2px;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .grid-item figure:hover figcaption .sub-title {
@@ -169,5 +173,76 @@ figcaption .sub-title {
     transform: translateX(0px) translateY(0) translatez(0) rotate(0deg) scale(1);
     transition: 0.6s;
     margin-top: 20px;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
+.portfolio .grid-container img {
+    width: 50%;
+    margin: 5px;
+}
+
+.grid-container {
+    height: 500px !important;
+    display: grid;
+    gap: 1%;
+}
+/* 
+======================
+======== GRID ========
+======================
+ */
+
+/* .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    position: absolute;
+    left: -50%;
+    top: -10%;
+    height: 100%;
+    width: 237%;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+}
+.three {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.four {
+    grid-column: 3;
+    grid-row: 3;
+}
+.five {
+    grid-column: 2;
+    grid-row: 4;
+}
+.six {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.portfolio a img {
+    width: 50%;
+}
+
+.wrapper img {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    border: 2px solid #19f58b;
+    border-radius: 5px;
+}
+
+.wrapper img:hover {
+    color: #19f58b;
+} */
